@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Denúncia</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Prefeitura Municipal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="consulta.html">Consultar Denúncias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Registrar Denúncia de Melhoria</h2>
+        <form action="enviado.html" method="POST" enctype="multipart/form-data">
+            <label for="foto">Foto do problema:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+
+            <label for="descricao">Descrição do problema:</label>
+            <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Prefeitura Municipal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
